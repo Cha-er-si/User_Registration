@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://chaersi:12345@crudmern.fyx6x.mongodb.net/userRegistration?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://chaersi:12345@crudmern.fyx6x.mongodb.net/userRegistration?retryWrites=true&w=majority",
+  "jwtSecret": "mySecretToken"
 }
