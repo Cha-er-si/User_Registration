@@ -4,11 +4,13 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import Landing from './components/layout/Landing';
+import Navbar from './components/layout/Navbar';
 //Redux
 import { Provider } from 'react-redux';
 import store from './store';
 import Alert from './components/layout/Alert';
-import  {loadUser}  from './actions/auth';
+import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 
 if (localStorage.token) {
@@ -24,9 +26,11 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
+          <Navbar />
           <section className='container'>
             <Switch>
-              <Route exact path='/' component={Login} />
+              <Route exact path='/' component={Landing} />
+              <Route exact path='/login' component={Login} />
               <Route exact path='/register' component={Register} />
             </Switch>
             <br />

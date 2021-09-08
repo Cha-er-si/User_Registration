@@ -91,7 +91,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
               />
             </div>
             <br />
-            Already have an account? <Link to='/'>Sign In</Link>
+            Already have an account? <Link to='/login'>Sign In</Link>
             <br />
             <br />
             <input type='submit' value='Register' />
