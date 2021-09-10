@@ -8,6 +8,7 @@ const profileSchema = new mongoose.Schema({
   birthday: {
     type: Date,
     required: true,
+    default: new Date(),
   },
   address: {
     type: String,
